@@ -1,0 +1,22 @@
+body{
+    font-family: 'Poppins', sans-serif;    
+    text-align: center;
+}
+
+.container-fluid--intro{
+    color: #fff;
+    text-align: justify;
+    padding: 2.5em;
+    font-weight: bold;
+    max-width: 100%;
+    background-color: rgb(43, 151, 190)
+}
+
+.container-fluid--count{
+    color: #fff;
+    text-align: justify;
+    padding: 2.5em;
+    font-weight: bold;
+    max-width: 100%;
+    background-color: rgb(181, 181, 28)
+}
