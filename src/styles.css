@@ -14,9 +14,26 @@ body{
 
 .container-fluid--count{
     color: #fff;
-    text-align: justify;
+    text-align: center;
     padding: 2.5em;
     font-weight: bold;
     max-width: 100%;
     background-color: rgb(181, 181, 28)
+}
+
+.container-gray{
+    color: #fff;
+    text-align: center;
+    padding: 2.5em;
+    font-weight: bold;
+    max-width: 100%;
+    background-color: rgb(164, 164, 145)
+}
+.container-dark{
+    color: #fff;
+    text-align: center;
+    padding: 2.5em;
+    font-weight: bold;
+    max-width: 100%;
+    background-color: rgb(4, 4, 4)
 }

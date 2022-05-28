@@ -1,8 +1,17 @@
-import React from "react"
-import Header from "./components/Header"
-import Count from "./components/Count"
+import React,{useState} from 'react'
+import Header from './components/Header'
+import Count from './components/Count'
+import Colors from './components/Colors'
 
 export default function App(){
+
+    const [darkMode, setDarkMode] = useState(false)
+
+    function toggleDarkMode(){
+        setDarkMode(prevMode => !prevMode)
+    }
+
+    console.log(darkMode)
 
     return(
         <div>
@@ -12,6 +21,10 @@ export default function App(){
                 documentation and trying to build without more help.                                
             </div>             
             <Count />
+            <Colors 
+                darkMode={darkMode}
+                toggle={toggleDarkMode}
+            />
         </div>     
     ) 
 
