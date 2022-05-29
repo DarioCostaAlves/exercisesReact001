@@ -2,14 +2,22 @@ import React,{useState} from 'react'
 import Header from './components/Header'
 import Count from './components/Count'
 import Colors from './components/Colors'
+import Box from './components/Box'
+//Data
+import boxesData from './data/boxes'
 
 export default function App(){
 
     const [darkMode, setDarkMode] = useState(false)
+    const [boxes, setBoxes] = useState(boxesData)
 
     function toggleDarkMode(){
         setDarkMode(prevMode => !prevMode)
     }
+
+    const squareElements = boxes.map(square => (
+        <Box on={square.on} key={square.id}/>
+    ))
 
     console.log(darkMode)
 
@@ -17,14 +25,23 @@ export default function App(){
         <div>
             <Header />
             <div className="container-fluid--intro">
-                First Project using reactJS alone without following any course, just checking the
-                documentation and trying to build without more help.                                
+                <h2>
+                    First Project using reactJS alone without following any course, just checking the
+                    documentation and trying to build without more help.
+                </h2>
             </div>             
             <Count />
             <Colors 
                 darkMode={darkMode}
                 toggle={toggleDarkMode}
             />
+            <div className="container-squares">
+                <h2>Boxes challenge here we go</h2>
+                <div className="boxes">
+                    {squareElements}
+                </div>                
+            </div>            
+            
         </div>     
     ) 
 

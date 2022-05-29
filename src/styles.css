@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 body{
     font-family: 'Poppins', sans-serif;    
     text-align: center;
@@ -36,4 +39,25 @@ body{
     font-weight: bold;
     max-width: 100%;
     background-color: rgb(4, 4, 4)
+}
+
+.container-squares{   
+    justify-content:center;
+    padding: 2.5em;
+    font-weight: bold;
+    background-color: rgb(215, 116, 116)
+}
+
+.boxes{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;    
+}
+
+.square{    
+    margin: 20px;
+    width: 150px;
+    height: 150px;
+    background-color: transparent;
+    border: black solid;
 }
