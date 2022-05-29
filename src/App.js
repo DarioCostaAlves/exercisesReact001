@@ -9,14 +9,14 @@ import boxesData from './data/boxes'
 export default function App(){
 
     const [darkMode, setDarkMode] = useState(false)
-    const [boxes, setBoxes] = useState(boxesData)
+    const [squares, setSquares] = useState(boxesData)
 
     function toggleDarkMode(){
         setDarkMode(prevMode => !prevMode)
     }
 
-    const squareElements = boxes.map(square => (
-        <Box on={square.on} key={square.id}/>
+    const squareElements = squares.map(square => (
+        <Box key={square.id} on={square.on} />
     ))
 
     console.log(darkMode)
